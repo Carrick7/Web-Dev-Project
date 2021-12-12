@@ -1,0 +1,425 @@
+/*Home Page CSS*/
+body{
+	font-family: 'Courier New', Courier, monospace;
+	background-color:rgb(51, 51, 51);
+}
+
+#backgroundImage{
+opacity: 70%;
+}
+
+/*Responsive Text for background title*/
+@media screen and (min-width: 1201px) {
+  #backgroundTitle{
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #backgroundTitle{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #backgroundTitle{
+    font-size: 12px;
+  }
+}
+/*Responsive Text for background text*/
+@media screen and (min-width: 1201px) {
+  #backgroundText{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #backgroundText{
+    font-size: 9px;
+  }
+}
+#backgroundTitle, #backgroundText{
+	text-align: center;
+	font-weight: bold;
+	margin-top: 4%;
+}
+#backgroundText{
+font-weight: normal;
+margin-top: auto;
+}
+.homeTitle_green{
+text-align: center;
+border-bottom:1px solid rgb(151, 255, 198);
+}
+.homeTitle_pink{
+	text-align: center;
+	border-bottom:1px solid rgb(237, 148, 255);
+	}
+#homePage{
+	padding-top: 2%;
+	color: #ffffff;
+}
+.quizLink{
+color: rgb(237, 214, 243);
+transition: .2s;
+}
+.quizLink:hover{
+	color: rgb(237, 148, 255);
+	transition: .2s;
+}
+/*Videos*/
+@media screen and (min-width: 531px){
+	.videos{
+		width: 525px;
+	  height: 300px;
+	}
+}	
+@media screen and (max-width: 530px){
+	.videos{
+		width: 325px;
+	  height: 180px;
+	}
+}
+/*Carousel*/
+#carouselSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slides{
+  width: 500%;
+  display: flex;
+}
+.slide img{
+ height: 1000px;
+}
+.slides input{
+  display: none;
+}
+.slide{
+  width: 20%;
+  transition: 2s;
+	bottom: 2px;
+}
+/*sliding motion CSS*/
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+/*Responsive carouesel*/
+@media screen and (min-width: 531px) {
+	.slider{
+		width: 750px;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+}
+@media screen and (max-width: 530px) {
+	.slider{
+			width: 325px;
+			border-radius: 10px;
+			overflow: hidden;
+	}
+}
+@media screen and (min-width: 531px) {
+	.slide img{
+		height: 1000px;
+	}
+}
+@media screen and (max-width: 530px) {
+	.slide img{
+		height: 450px;
+	}
+}
+#footer{
+	background-color: #ffffff;
+	color: rgb(51, 51, 51);	
+}
+#footerQuiz{
+	margin-bottom: 4%;
+}
+#footerTitle{
+	color: rgb(51, 51, 51);
+}
+#homeFooter, #htmlQuizFooter, #jsQuizFooter, #privacyFooter{
+	color: rgb(51, 51, 51);
+	transition: all .70s;
+}
+#homeFooter:hover, #htmlQuizFooter:hover, #jsQuizFooter:hover, #privacyFooter:hover{
+	color: rgb(228, 95, 255);
+	transition: all .70s;
+}
+
+/*CSS by Carrick Sciberras for JavaScript quiz page - Start*/
+/*Navbar*/
+#section{
+	padding-top: 2%;
+}#navbarGap{
+	margin-bottom: 2%;
+}
+#home, #htmlQuiz, #jsQuiz, #privacy{
+	margin: 5px;
+	transition: all .70s;
+	text-decoration: underline;
+}
+#home:hover, #htmlQuiz:hover, #jsQuiz:hover, #privacy:hover{
+	color: rgb(228, 95, 255);
+	transition: all .70s;
+}
+/*CSS for js_quiz*/
+#title{
+	color:#ffffff;
+	text-align: center;
+	text-decoration: underline 1px rgb(151, 255, 198);
+	margin-top: 10px;
+}
+.header2{
+	font-size: 20px;
+	text-decoration: underline 1px rgb(151, 255, 198);
+}
+
+/*CSS for js_quiz questions & answers*/
+.questionTitle{
+	margin-bottom: 25px;
+	text-align: center;
+	border-bottom: 1px solid rgb(151, 255, 198);	
+	color: #ffffff;
+	margin-top: 20px;
+}
+.dropDown{
+ width: 95%;
+ border-radius: 5px;
+ overflow: hidden;
+ border: 1px solid rgb(151, 255, 198);
+ background-color: rgb(51, 51, 51);
+ color: rgb(237, 214, 243);
+ transition: all .75s ease-out;
+}
+.dropDown:hover{
+	width: 95%;
+	background-color: rgb(237, 214, 243);
+	color: rgb(51, 51, 51);
+	cursor: pointer;
+	border: 1px solid rgb(237, 148, 255);
+	transition: all .75s ease-out;
+}
+.possibleAnswers{
+	text-align: center;
+}
+#quizBox{
+	margin-bottom: 50px;
+}
+.text-center{
+	margin-top: 20px;
+}
+
+/*Quiz Submit Button and footer button*/
+#submit, #topBtn{
+	background-color:rgb(51, 51, 51) ;
+	color:rgb(237, 214, 243);
+	border-color:rgb(151, 255, 198);
+	transition: all .75s ease-out;
+	margin-bottom: 20px;
+}
+#submit:hover, #topBtn:hover{
+	background-color: rgb(237, 214, 243);
+	color:rgb(51, 51, 51) ;
+	border-color: rgb(237, 148, 255);
+	transition: all .75s ease-out;
+}
+#submit:focus, #topBtn:focus{
+	background-color: rgb(237, 214, 243);
+	color:rgb(51, 51, 51) ;
+	border-color: rgb(237, 148, 255);
+	box-shadow: none;
+}
+
+/*Results CSS*/
+.results{
+	border-bottom: 1px solid rgb(151, 255, 198);
+}
+#result6{
+	border-bottom: none;
+}
+#resultTable{
+	background-color: rgb(51, 51, 51);
+	color:rgb(237, 214, 243) ;
+	border: 1px solid rgb(151, 255, 198);
+}
+#resultTitle{
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: underline 1px rgb(151, 255, 198);
+	visibility: hidden;
+}
+@media screen and (min-width: 1201px) {
+	#resultTable{
+    width: 27%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #resultTable{
+    width: 98%;
+  }
+}
+/*CSS for Modal View for questions*/
+.gallery{
+	background-color: rgb(51, 51, 51);
+	padding: 80px 0;
+}
+.gallery img{
+	background-color: #ffffff;
+	padding: 15px;
+	width: 100%;
+	cursor: pointer;
+}
+#gallery-modal .modal-img{
+	width: 100%;
+}
+img{
+	max-width: 100%;
+	max-height: 55%;
+	min-height: 55%;
+}
+#zoomedCloseButton{
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	font-weight: bold;
+	font-size: 30px;
+}
+#zoomQuestion{
+	margin-top: 20px;
+	margin-bottom: 0;
+	color:rgb(51, 51, 51);
+}
+.questionInput{
+	margin-top: 2px;
+	text-align: center;
+}
+/*Form CSS. General structure and titles*/
+@media screen and (max-width: 450px) {
+  .formContainer{
+    max-width: 370px;
+		max-height: 500px;
+		top: 1%;
+  }
+}
+.formContainer {
+	position: fixed;
+	top: 11%;
+	width: 450px;
+	max-width: 80%;
+	height: 830px;
+	background-color: rgb(226, 226, 226);
+	border-radius: 5px;
+	padding: 0px 20px;
+	overflow: scroll;
+	border: 2px double rgb(151, 255, 198);
+	display: none;
+}
+.heading {
+	border-bottom: 1px;
+	background-color: rgb(226, 226, 226);
+	text-align: center;
+}
+#formHead{
+	text-decoration: none;
+}
+
+/*form inputs customisation*/
+.form-input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+.form-input label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.form-input input {
+	border: 2px solid rgba(128, 128, 128, 0.705);
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+.form-input input:focus {
+	outline: 0;
+	border-color: rgb(51, 51, 51);
+}
+
+/*colour scheme for success, error & error message*/
+.form-input.success input {
+border-color: rgb(0, 173, 14);
+}
+.form-input.error input {
+ border-color: rgb(197, 0, 0);
+}
+.form-input small {
+	color: rgb(197, 0, 0);
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+.form-input.error small {
+	visibility: visible;
+}
+
+/*form submit button customisation*/
+#formSubmit {
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all .7s;
+  background-color:rgb(51, 51, 51) ;
+  color:rgb(237, 214, 243);
+  border-color:rgb(151, 255, 198);
+}
+#formSubmit:hover {
+	background-color: rgb(237, 214, 243);
+	color:rgb(51, 51, 51) ;
+	border-color: rgb(237, 148, 255);
+}
+
+/*close button customisation*/
+.closeButton{
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	font-weight: bold;
+	font-size: 30px;
+	display: flex;
+}
+/*Slider CSS*/
+#no{
+	color:rgb(197, 0, 0);
+}
+#yes{
+	color:rgb(0, 173, 14);
+}
+#sliderAlign{
+	width: 380px;
+	max-width: 95%;
+}
+/*terms_links customisation*/
+.terms_links {
+  font-size: 12px;
+  margin-top: 20px;
+	text-align: center;
+}
+/*CSS by Carrick Sciberras for JavaScript quiz page - End*/
+

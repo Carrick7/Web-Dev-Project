@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JavaScript Quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/website_style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/d92c63f6ca.js" crossorigin="anonymous"></script>
+</head>
+   <body>
+      <!--NavBar-->
+      <section class="gallery min-vh-100" id="section">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light" class="navbar navbar-light bg-light" >
+          <div class="container-fluid" id="navBarText">
+             <a class="navbar-brand" href="#"><i class="fas fa-code" href="#"></i> Coducation</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbarContent">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item" >
+                  <a class="nav-link" class="navbarLinks" href="index.html" id="home">Home</a>
+               </li> 
+                <li class="nav-item" >
+                  <a class="nav-link" class="navbarLinks" href="#" id="htmlQuiz">HTML & CSS Quiz</a>
+                </li>
+                <li class="nav-item" class="navbarLinks">
+                  <a class="nav-link active" aria-current="page" href="js_quiz.html" id="jsQuiz">JavaScript Quiz</a>
+                </li>
+                <li class="nav-item" class="navbarLinks">
+                  <a class="nav-link " href="#" id="privacy">Privacy Page</a>
+               </li>
+              </ul>
+            </div>
+           </div>
+          </div>
+        </nav> 
+        <!--Web page title-->
+       <div class="container-lg">
+         <div class="col" id="title">
+            <h1>JavaScript Quiz</h1>
+                  <h2 class="header2"> Spot the Errors in the JavaScript Code</h2> 
+                     <h2 class="header2">Click on the Images to Zoom in!</h2>
+         </div>
+         <!--Quiz:Question 1-->
+         <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3" id="quizBox">
+            <div class="col">
+               <div class="question">
+                  <h5 class="questionTitle">Question 1</h5> 
+               </div>
+                  <img src="img/1.jpg" class="gallery-item" alt="gallery">
+                     <div class="text-center">
+                        <select id="quiz-answer1" class="dropDown">
+                           <option class="possibleAnswers" value="0">Choose Your Answer</option>
+                           <option class="possibleAnswers" value="1">i=0; in line 4</option>
+                           <option class="possibleAnswers" value="2">Missing ; in line 17</option>
+                           <option class="possibleAnswers" value="3">Missing } in line 5</option>
+                        </select>
+                     </div>
+            </div>
+            <!--Quiz:Question 2-->
+            <div class="col">
+               <div class="question">
+                  <h5 class="questionTitle">Question 2</h5> 
+               </div>
+                  <img src="img/2.jpg" class="gallery-item" alt="gallery">
+                     <div class="text-center">
+                        <select id="quiz-answer2" class="dropDown">
+                           <option class="possibleAnswers" value="0">Choose Your Answer</option>
+                           <option class="possibleAnswers" value="1">Missing ) in line 5</option>
+                           <option class="possibleAnswers" value="2">Missing ; in line 16</option>
+                           <option class="possibleAnswers" value="3">Spelling error in line 2</option>
+                        </select>
+                     </div>
+            </div>
+            <!--Quiz:Question 3-->
+            <div class="col">
+               <div class="question">
+                  <h5 class="questionTitle">Question 3</h5> 
+               </div>
+                  <img src="img/3.jpg" class="gallery-item" alt="gallery">
+                     <div class="text-center">
+                        <select id="quiz-answer3" class="dropDown">
+                           <option class="possibleAnswers" value="0">Choose Your Answer</option>
+                           <option class="possibleAnswers" value="1">Missing ; in line 12</option>
+                           <option class="possibleAnswers" value="2">Missing } in line 9</option>
+                           <option class="possibleAnswers" value="3">Wrong symbol in line 3</option>
+                        </select>
+                     </div>
+            </div>
+            <!--Quiz:Question 4-->
+            <div class="col">
+               <div class="question">
+                  <h5 class="questionTitle">Question 4</h5> 
+               </div>
+                  <img src="img/4.jpg" class="gallery-item" class="rounded mx-auto d-block" alt="gallery">
+                     <div class="text-center">
+                        <select id="quiz-answer4" class="dropDown">
+                           <option class="possibleAnswers" value="0">Choose Your Answer</option>
+                           <option class="possibleAnswers" value="1">Spelling error in line 14</option>
+                           <option class="possibleAnswers" value="2">Spelling error in line 11</option>
+                           <option class="possibleAnswers" value="3">Spelling error in line 17</option>
+                        </select>
+                     </div>
+            </div>
+            <!--Quiz:Question 5-->
+            <div class="col">
+               <div class="question">
+                  <h5 class="questionTitle">Question 5</h5>  
+               </div>
+                  <img src="img/5.jpg" class="gallery-item" alt="gallery">
+                     <div class="text-center">
+                        <select id="quiz-answer5" class="dropDown">
+                           <option class="possibleAnswers" value="0">Choose Your Answer</option>
+                           <option class="possibleAnswers" value="1">Spelling error in line 3</option>
+                           <option class="possibleAnswers" value="2">Syntax error in line 3</option>
+                           <option class="possibleAnswers" value="3">Missing } in line 3</option>
+                        </select>
+                     </div>
+            </div>
+            <!--Quiz:Question 6-->
+            <div class="col">
+               <div class="question">
+                  <h5 class="questionTitle">Question 6</h5> 
+               </div>
+                  <img src="img/6.jpg" class="gallery-item" alt="gallery">
+                     <div class="text-center">
+                        <select id="quiz-answer6" class="dropDown">
+                           <option class="possibleAnswers" value="0">Choose Your Answer</option>
+                           <option class="possibleAnswers" value="1">Missing ) in line 3</option>
+                           <option class="possibleAnswers" value="2">Missing } in line 3</option>
+                           <option class="possibleAnswers" value="3">Spelling error in line 4</option>
+                        </select>
+                     </div>
+            </div>
+         </div>
+       </div>
+         <!--Quiz submit button-->
+         <div class="text-center">
+            <button type="button" class="btn btn-primary btn-lg" id="submit" class="test">Submit Quiz</button>
+         </div>
+         <!--Form Pop Up Title-->
+         <div id="formBody" class="d-flex justify-content-center">
+            <div class="formContainer" id="formContainer" >
+             <div class="heading">
+                <button id="close" class="closeButton">&times;</button> 
+                 <h2 id="formHead">Sign Up!</h2>
+                  <small>Complete the form below and see your result!</small>
+             </div>
+               <!--form-->
+            <form id="form" class="form">
+               <!--first name-->
+               <div class="form-input">
+                  <label class="col-form-label">First Name</label >
+                  <input type="text" id="firstName"/>
+                  <small>Error message</small>
+               </div>
+               <!--surname-->
+               <div class="form-input">
+                  <label class="col-form-label">Surname</label >
+                  <input type="text" id="surname"/>
+                  <small>Error message</small>
+               </div>
+               <!--email-->
+               <div class="form-input">
+                  <label class="col-form-label">Email</label >
+                  <input id="email" />
+                  <small>Error message</small>
+               </div>
+               <!--password-->
+               <div class="form-input">
+                  <label class="col-form-label">Password</label >
+                  <input type="password"id="password" />
+                  <small>Error message</small>
+               </div>
+               <!--confirm password-->
+               <div class="form-input">
+                  <label class="col-form-label">Confirm Password</label >
+                  <input type="password" id="confirmPassword" />
+                  <small>Error message</small>
+               </div>
+               <!--range-->
+               <div class="form-input">
+                  <label for="points" class="col-form-label">How likely would you recommend out our Website to a friend?</label >
+                  <input type="range" id="points" name="points" min="0" max="10"/>
+                  <div class="row justify-content-between" id="sliderAlign">
+                    <div class="col-4" id="no"><p>No Way!</p></div>
+                      <div class="col-3" id="yes"><p>Definitely!</p></div>
+                    </div>
+               </div>
+               <!--button-->
+               <button id="formSubmit"><b>Submit</b></button>
+               <!--link to privacy page-->
+               <p class="terms_links">
+                  By signing up, you will be agreeing to our
+                  <a href="#"><b>Terms & Conditions</b></a> 
+                     and
+                  <a href="#"><b>Privacy Policy</b></a>
+               </p>      
+            </form>
+         </div>
+      </div>
+         <!--Results Table-->
+         <div class="container-lg">
+               <h2 id="resultTitle">Results</h2>
+         </div>
+         <div class="container-lg" id="resultTable">
+            <div class="results" id="result1"></div>
+            <div class="results" id="result2"></div>
+            <div class="results" id="result3"></div>
+            <div class="results" id="result4"></div>
+            <div class="results" id="result5"></div>
+            <div class="results" id="result6"></div>  
+         </div>
+   </section>
+   <!--Modal for Quiz Images-->
+   <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="questionInput" id="zoomQuestion">What is the error in this code?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="zoomedCloseButton">&times;</button>
+         </div>
+         <div class="modal-body">
+            <img src="img/1.jpg" class="modal-img" alt="modal img">
+         </div>
+      </div>
+   </div>
+   </div>
+   <!--Footer-->
+	<div id="footerQuiz">
+      <div class="card text-center">
+        <div class="card-header">
+          <a class="navbar-brand" href="index.html" id="footerTitle" title="home"><i class="fas fa-code" href="index.html"  title="home"></i>Coducation</a>
+        </div>
+        <div class="card-body">
+            <div id="footerLinks">
+              <ul class="navbar-nav">
+               <li class="nav-item" >
+                 <a class="nav-link active" aria-current="page" href="index.html" id="homeFooter">Home</a>
+               </li> 
+               <li class="nav-item" >
+                <a class="nav-link" class="navbarLinks" href="#" id="htmlQuizFooter">HTML & CSS Quiz</a>
+               </li>
+               <li class="nav-item" class="navbarLinks">
+                <a class="nav-link" class="navbarLinks" href="js_quiz.html" id="jsQuizFooter">JavaScript Quiz</a>
+               </li>
+               <li class="nav-item" class="navbarLinks">
+                <a class="nav-link " href="#" id="privacyFooter">Privacy Page</a>
+             </div>		
+        </div>
+      </div>
+   </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="js/quizLogic.js"></script>
+      <script src="js/formScript.js"></script>
+   </body>
+</html>

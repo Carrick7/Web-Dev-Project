@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/website_style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/d92c63f6ca.js" crossorigin="anonymous"></script>	
+</head>
+	<body>
+	<!--The Header-->
+		<section id="homePage" class="gallery min-vh-100">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" class="navbar navbar-light bg-light" id="navbarGap" >
+				<div class="container-fluid" id="navBarText">
+					<a class="navbar-brand" href="#"><i class="fas fa-code" href="#"></i> Coducation</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="navbarContent">
+							<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav">
+									<li class="nav-item" >
+										<a class="nav-link active" aria-current="page" href="index.html" id="home">Home</a>
+								</li> 
+									<li class="nav-item" >
+										<a class="nav-link" class="navbarLinks" href="#" id="htmlQuiz">HTML & CSS Quiz</a>
+									</li>
+									<li class="nav-item" class="navbarLinks">
+										<a class="nav-link" class="navbarLinks" href="js_quiz.html" id="jsQuiz">JavaScript Quiz</a>
+									</li>
+									<li class="nav-item" class="navbarLinks">
+										<a class="nav-link " href="#" id="privacy">Privacy Page</a>
+								</li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</nav> 
+			<!--Background Image-->
+			<div class="card bg-dark text-white">
+				<img class="card-img" src="img/sky_bg.png" alt="Card image" id="backgroundImage">
+					<div class="card-img-overlay">
+						<h5 class="card-title" id="backgroundTitle">Welcome to Coducation</h5>
+							<p class="card-text" id="backgroundText">A space that focuses on helping individuals with HTML, CSS and JavaScript</p>
+					</div>
+			</div>
+				<br>
+			<!--About Us-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="homeTitle_green">About Us</h2>
+							<p>Coducation was founded in Dublin, Ireland in 2021. Our company provides a range of educational services to both individuals and businesses. 
+									'Website Name''s goal is to help individuals with enchance their skills in HTML, CSS and JavaScript. We achieve this goal by providing weekly quizzes on HTML, CSS and 
+									JavaScript. Below you can find useful information and videos relating to HTML, CSS & JavaScript.</p>	
+					</div> 
+				</div>
+				<br>
+				<!--HTML Info-->
+				<div class="row" id="HTML_info">
+					<div class="col-md-4" >
+						<h2 class="homeTitle_pink">HTML</h2>
+							<p>HTML (Hyper Text Markup Language) is the standard markup language for Web pages. You can use it use it to strucutre your webpage and it will tell 
+								the browser how to display your content. The video titled as HTML Explained explains what HTML5 is. 
+								Click here to try our <a class="quizLink" href="">HTML & CSS Quiz!</a></p>
+					</div>
+					<!--HTML Video-->
+					<div class="col-md-5 offset-md-3" class="videoContainer">
+						<h2 class="homeTitle_pink">HTML Explained</h2>
+							<video controls class="videos">
+								<source src="vids/HTML5.mp4" type="video/mp4">
+								<source src="movie.ogg" type="video/ogg">
+								Your browser does not support the video tag.
+							</video>
+					</div>
+				</div>	
+				<br>
+				<!--CSS Info Info-->
+				<div class="row">
+					<div class="col-md-4" >
+						<h2 class="homeTitle_green">CSS</h2>
+							<p>CSS (Cascading Style Sheets) is the language we use to style an HTML document. You can use it use it to describes how HTML elements should be 
+									displayed. The video titled as CSS Explained explains what CSS is. Click here to try our <a class="quizLink" href="">HTML & CSS Quiz!</a></p>
+					</div>
+					<!--CSS Video-->
+					<div class="col-md-5 offset-md-3" class="videoContainer">
+						<h2 class="homeTitle_green">CSS Explained</h2>
+							<video controls class="videos">
+								<source src="vids/CSS.mp4" type="video/mp4">
+								<source src="movie.ogg" type="video/ogg">
+								Your browser does not support the video tag.
+							</video>
+					</div>
+				</div>	
+				<br>
+				<!--JS Info-->
+				<div class="row">
+					<div class="col-md-4" >
+						<h2 class="homeTitle_pink">JavaScript</h2>
+						JavaScript is a scripting or programming language that allows you to implement complex features on web pages. JavaScript gives web pages interactive 
+						elements that engage a user. JavaScript can update and change both HTML and CSS. The video titled as CSS Explained explains what JavaScript is.You 
+						can click here to try our <a class="quizLink" href="js_quiz.html">JavaScript Quiz!</a></p>
+					</div>
+					<!--JS Video-->
+					<div class="col-md-5 offset-md-3" class="videoContainer">
+						<h2 class="homeTitle_pink">JavaScript Explained</h2>
+							<video controls class="videos">
+								<source src="vids/JavaScript.mp4" type="video/mp4">
+								<source src="movie.ogg" type="video/ogg">
+								Your browser does not support the video tag.
+							</video>
+					</div>
+				</div>	
+			</div>
+				<br>
+				<!--What You can learn section-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="homeTitle_green">What You Can Learn!</h2>
+							<p>It is no secret that the way to master front-end web development is by practicing and building small projects. In order to enchance the learning
+									experience of our users, we will be introducing a new section to our website. This new section will consist of video tutorials that will show our users
+									how to build some really cool things using HTML, CSS & JavaScript. All video tutorials will include the source code too!
+							</p>	
+							<p>We are excited to announce that our first tutorial will be released next week! We will be showcasing how to build a carousel with HTML, 
+								 CSS & JavaScript. You can see the carousel in action below!</p>
+					</div> 
+				</div>
+			</div>
+		 	<br>
+			<!--Carousel-->
+			<div id="carouselContainer">
+				<div id="carouselSection">
+					<div class ="slider">
+						<div class ="slides">
+							<!--radio buttons-->
+							<input type="radio" name="radio-btn" id="radio1">
+							<input type="radio" name="radio-btn" id="radio2">
+							<input type="radio" name="radio-btn" id="radio3">
+							<!--images start-->
+							<div class="slide first" >
+								<img src="img/coding1.png" alt="">
+							</div>
+							<div class="slide">
+								<img src="img/coding2.png" alt="">
+							</div>
+							<div class="slide">
+								<img src="img/coding3.png" alt="">
+							</div>
+			  		</div>	
+		  		</div>	
+		  	</div>
+	  	</div>
+			<!--Footer-->
+	  	<div id="footer">
+				<div class="card text-center">
+					<div class="card-header">
+						<a class="navbar-brand" href="index.html" id="footerTitle" title="home"><i class="fas fa-code" href="index.html"  title="home"></i> Coducation</a>
+					</div>
+						<div class="card-body">
+							<div id="footerLinks">
+								<ul class="navbar-nav">
+									<li class="nav-item" >
+										<a class="nav-link active" aria-current="page" href="index.html" id="homeFooter">Home</a>
+							  	</li> 
+									<li class="nav-item" >
+										<a class="nav-link" class="navbarLinks" href="#" id="htmlQuizFooter">HTML & CSS Quiz</a>
+									</li>
+									<li class="nav-item" class="navbarLinks">
+										<a class="nav-link" class="navbarLinks" href="js_quiz.html" id="jsQuizFooter">JavaScript Quiz</a>
+									</li>
+									<li class="nav-item" class="navbarLinks">
+										<a class="nav-link " href="#" id="privacyFooter">Privacy Page</a>
+				    		</div>		
+				    </div>
+				</div>
+			</div>
+    </section>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script src="js/main_page.js"></script>
+	</body>
+</html>
