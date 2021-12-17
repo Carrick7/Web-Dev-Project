@@ -38,8 +38,8 @@ div.content {
 }	
  
 .show{
-	background-color: rgb(226, 226, 226);
-	color:black;
+	background-color: rgb(51, 51, 51);
+	color:#ffffff;
 	
 }
 
@@ -52,7 +52,7 @@ div.content {
 
 .header a {
   float: left;
-  color: black;
+  color:black;
   text-align: center;
   padding: 12px;
   text-decoration: none;
