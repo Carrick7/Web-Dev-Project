@@ -71,8 +71,8 @@ function verifyInputs(){
 
 		//All inputs are accepted
 		if(firstName.value.match(letters) && surname.value.match(letters) && email.value.match(emailChars) && password.value.match(passwordChars) && passwordValue === confirmPasswordValue){
-				alert("All your inputs have been accepted. Thank You for signing up!");
 				document.getElementById("formContainer").style.display = "none";
+				$("#thankYouContainer").toggle();
 		}
 	
 		//if the success condition is met the div class form-input is updated to form-input success
@@ -95,3 +95,7 @@ function verifyInputs(){
 			small.innerText = message;
 		}
 }
+/*Closing Completed Form Pop Up*/
+$("#thankYouClose").click(function(){
+	$("#thankYouContainer").hide();
+});
