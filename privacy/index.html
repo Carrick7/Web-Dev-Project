@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Privacy</title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+
+
+	<body>
+
+	<!--The Nav Bar -->
+		<section id="homePage" class="gallery min-vh-100">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" class="navbar navbar-light bg-light" id="navbarGap" >
+				<div class="container-fluid" id="navBarText">
+					<a class="navbar-brand" href="#"><i class="fas fa-code" href="#"></i> Coducation</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="navbarContent">
+							<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav">
+									<li class="nav-item" >
+										<a class="nav-link active" aria-current="page" href="../index.html" id="home">Home</a>
+								</li> 
+									<li class="nav-item" >
+										<a class="nav-link" class="navbarLinks" href="../FionaDelamere.HTMLCSSQuiz.html" id="htmlQuiz">HTML & CSS Quiz</a>
+									</li>
+									<li class="nav-item" class="navbarLinks">
+										<a class="nav-link" class="navbarLinks" href="../js_quiz.html" id="jsQuiz">JavaScript Quiz</a>
+									</li>
+									<li class="nav-item" class="navbarLinks">
+										<a class="nav-link " href="#" id="privacy">Privacy Page</a>
+								</li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</nav> 
+		
+	<!-- // The Side Bar -->
+		<div class="sidebar show">
+				<a href="#intro">Introduction</a>
+				<a href="#collect">Information We Collect</a>
+				<a href="#share">Information We Share With Third Parties</a>
+				<a href="#how">How we use your data</a>
+				<a href="#rights">Your Rights</a>
+				<a href="#SAR">Subject Access Request</a>
+				<a href="#DPO">Contact our Data Protection Officer</a>
+				
+		</div>
+		
+		
+		
+	<!-- // Page content -->
+			
+		<div class="container">
+			
+			
+			<!-- // Introduction -->
+			<div id="intro" class="row">
+				<div class="col-lg-12 show">
+					<h1>Privacy Policy</h1>
+					<p>This is our Privacy Policy. It explains what we do with your personal data. It details how much of your personal data we collect about you and what we do with that data. It also explains your rights under the law including the General Data Protection Regulation (GDPR).<p>
+			
+				</div>
+			
+			</div>
+			
+			<!-- // Information Collected -->
+			<div id="collect" class="row">
+				<div class="col-lg-12 show">
+					<h2>Information We Collect</h2>
+					<p>When you fill in our Sign Up form, we collect your name, email address and date of birth. When you engage with our services, we also collect other information about you. When you complete one of our quizzes, we store your results, including which answers you got right and wrong.<br /><br />As you engage with our website, we also collect the following further information about you:</p>
+						
+						
+						<ul class="list">
+						<strong>Usage Patterns</strong>
+							<li >Time spend on each question</li>
+							<li >Clicks</li>
+							<li >Mouse Movements</li>
+						</ul>	
+						
+						<ul class="list">
+						<strong>Technical Specifications</strong>
+							<li >Your IP Address</li>
+							<li >Your Device Type</li>
+							<li >Your Operating System</li>
+						</ul>	
+				
+				</div>
+			
+			</div>
+			
+			<!-- // Information We Share with Third Parties -->
+			<div id="share" class="row">
+				<div class="col-lg-12 show">
+					<h2>Information We Share With Third Parties</h2>
+					<p>With your consent, we may share your quiz results with third parties. For example, you may wish to share your results with a prospective employer or with a tutor. If you choose to do so, we will provide those third parties with a certified copy of your results. In order to consent to this sharing of your results, please enable the toggle below.</p>
+						<!-- // Tickbox that allows users to share results. -->
+						<p  class="results">Tick to enable sharing your results:</p> <input type="checkbox" id="myCheck" onclick="myFunction()">
+						<p id="text" style="display:none">
+						You have enabled sharing your results. You can diable this feature at any time by unticking the box. <br /><br />To allow a third party to access your results, you must generate a unique code. Share this code with the person you wish to share your results with. They must quote this code, along with your username, when contacting us. <br /><button onclick="generateCode()">Generate Unique Code</button>
+						</p>
+					
+				</div>
+			
+			</div>
+			
+			<!-- //How we use your data -->
+			<div id="how" class="row">
+				<div class="col-lg-12 show">
+					
+					
+					<h2>How we use your data</h2>
+					<h3>To Provide you with Personalised Ads</h3>
+					<p>We use your perosnal data in order to provide you with ads that are more relevant to your circumstances.</p>
+					<div class="popup" onclick="learnMoreAds()">Learn More
+							<span class="popuptext" id="adsInfo">For example, if you have scored highly our Web Design quiz, you may see ads for employment opportunities as a web designer. If you have not acheived a high score, you may see ads for further education opportunities in web design.</span>
+					</div>
+					
+					<h3>To provide you with our Services</h3>
+					<p>We use the personal data we collect to provide you with the services you engage with.</p>
+					<div class="popup" onclick="learnMoreServices()">Learn More
+							<span class="popuptext" id="servicesInfo">By collecting your name and email, we can send you useful information, such as your official quiz results.</span>
+					</div>
+					
+					
+					<h3>To Improve our Services</h3>
+					<p>We use your personal data to improve our services.</p>
+					<div class="popup" onclick="learnMoreImprovements()">Learn More
+							<span class="popuptext" id="improvementsInfo">By analysing usage patterns, we can improve our quizes and make them more engaging.</span>
+					</div>
+				</div>
+			
+			</div>
+			
+			<!-- //Your Rights -->
+			<div id="rights" class="row">
+				<div class="col-lg-12 show">
+					<h2>Your Rights</h2>
+					<p>You have a number of rights regarding the processing of your personal data as provided by the GDPR. These rights include:</p>
+					<ol>
+						<li>The right to be informed</li>
+						<li>The right of access</li>
+						<li>The right to rectification</li>
+						<li>The right to erasure</li>
+						<li>The right to restrict processing</li>
+						<li>The right to data portability</li>
+						<li>The right to object</li>
+						<li>Rights in relation to automated decision making and profiling</li>
+					</ol>
+			
+				</div>
+			
+			</div>
+			
+			<!-- //Subject Access Request -->
+			<div id="SAR" class="row">
+				<div class="col-lg-12 show">
+					<h2>Subject Access Request</h2>
+					<p>You have a right to access a copy of your personal data that we process. In order to request a copy, please fill out the form provided (indicating which data your request relates to).</p>
+					<form id="form" onsubmit="message()";>
+						Name:<input type="text" id="formName" /><br/>
+						Email:<input type="email" id="formEmail" /><br/>
+						<input type="checkbox" id="results" name="results" value="Quiz">
+						<label for="results"> Quiz Results</label><br>
+						<input type="checkbox" id="data" name="data" value="Everything">
+						<label for="data"> All other data</label><br>
+						<input type="submit"  /><br/>
+					</form>
+					
+				</div>
+			
+			</div>
+			
+			<!-- //Data Protection Officer -->
+			<div id="DPO" class="row">
+				<div class="col-lg-12 show">
+					<h2>Contact Our Data Protection Officer</h2>
+					<p>You can contact our Data Protection Officer in following ways:</p>
+					<ul>
+						<li>Email: dpo@webdesignquizzes.com</li>
+						<li >Phone: 01 1234567</li>			
+					</ul>
+				</div>
+			
+			</div>
+	
+		</div>
+		
+		<!--Footer-->
+	  	<div id="footer">
+				<div class="card text-center">
+					<div class="card-header">
+						<a class="navbar-brand" href="privacy.html" id="footerTitle" title="Privacy Page"><i class="fas fa-code" href="privacy.html"  title="Privacy Page"></i> Coducation</a>
+					</div>
+						<div class="card-body">
+							<div id="footerLinks">
+								<ul class="navbar-nav">
+									<li class="nav-item" >
+										<a class="nav-link active" aria-current="page" href="../index.html" id="homeFooter">Home</a>
+							  	</li> 
+									<li class="nav-item" >
+										<a class="nav-link" class="navbarLinks" href="../FionaDelamere.HTMLCSSQuiz.html" id="htmlQuizFooter">HTML & CSS Quiz</a>
+									</li>
+									<li class="nav-item" class="navbarLinks">
+										<a class="nav-link" class="navbarLinks" href="../js_quiz.html" id="jsQuizFooter">JavaScript Quiz</a>
+									</li>
+									<li class="nav-item" class="navbarLinks">
+										<a class="nav-link " href="#" id="privacyFooter">Privacy Page</a>
+				    		</div>		
+				    </div>
+				</div>
+			</div>
+    </section>
+		
+		
+	<script src="../js/privacy_script.js"></script>
+	</body>
+</html>
