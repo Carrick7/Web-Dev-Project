@@ -448,3 +448,141 @@ border-color: rgb(0, 173, 14);
 }
 /*CSS by Carrick Sciberras for JavaScript quiz page - End*/
 
+/*CSS by Fiona Delamere for HTML/CSS Quiz page - Start*/
+
+body	{
+	font-family: 'Courier New', Courier, monospace;
+	color: #ffffff;
+	background-color:rgb(51, 51, 51);
+	}
+	
+.container h1 {
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+}
+
+#quiz	{
+	height: auto;
+	width: auto;
+	border: #808080 20px solid; 
+	border-radius: 50px;
+	padding: 20px 40px 20px 40px; 
+	margin: 40px 10px 40px 10px;
+	} 
+/*CSS by Fiona Delamere for HTML/CSS Quiz page - End*/
+
+
+/*CSS by Cian O'Brien for Privacy Page - Start*/
+
+/*CSS for H1,H2 and H3*/
+.intro_green{
+	text-align:center;
+	border-bottom:1px solid rgb(222, 245, 232);
+	
+}
+
+.all_pink{
+	text-align:center;
+	border-bottom:1px solid rgb(237, 148, 255);
+	}
+
+.align_data{	
+	text-align:left;
+}
+
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+#intro, #collect, #share, #how, #rights, #SAR, #DPO{
+	margin-top:100px;
+	min-height:100px;
+	justify-content:space-between;
+}	
+ 
+.show{
+	background-color: rgb(51, 51, 51);
+	color:#ffffff;	
+}
+
+	
+/*CSS for Sidebar*/	
+.sidebar{
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(51, 51, 51);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border: 1px solid rgb(237, 148, 255);
+
+}	
+
+.sidebar a {
+  display: block;
+  color: rgb(151, 255, 198);
+  padding: 16px;
+  text-decoration: none;
+  text-decoration: underline;
+  }
+	
+/*CSS for option that allows users to enable sharing their results with third parties*/
+.sharing{
+	color: rgb(237, 148, 255);
+	text-decoration: underline;
+	
+	
+}
+
+/*CSS for Popups that provide more information on How we Use your Data*/
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(237, 148, 255);
+  text-decoration: underline;
+  
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: white;
+  color: black;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s
+}
+
+/*CSS for List of Rights*/
+.list{
+    text-align:left;
+}
+/*CSS by Cian O'Brien for Privacy Page - End*/
