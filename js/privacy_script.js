@@ -3,8 +3,26 @@ function message(){
 	document.getElementById("form").style.display = "none";
 	var userName=document.getElementById("formName").value;
 	var userEmail=document.getElementById("formEmail").value;
+	
+	
+form.addEventListener('click', e => { e.preventDefault();
+
+	verifyInputs();
+});
+	
+var emailChars = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+	
+function verifyInputs(){
+
+if(email.value.match(emailChars)){
+			setSuccessFor(email);
+		}
+			
+}
+		
 	alert(userName+" , thank you for your Subject Access Request. We will send a copy of all relevant personal data to " +userEmail+ " within 30 days.");
 }
+
 
 
 function myFunction() {
