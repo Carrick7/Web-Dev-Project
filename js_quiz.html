@@ -45,6 +45,18 @@
                   <h2 class="header2"> Spot the Errors in the JavaScript Code</h2> 
                      <h2 class="header2">Click on the Images to Zoom in!</h2>
          </div>
+	 <!--Results Table-->
+      	 <div class="container-lg">
+            <h2 id="resultTitle">Results</h2>
+      	 </div>
+     	  <div class="container-lg" id="resultTable">
+            <div class="results" id="result1"></div>
+            <div class="results" id="result2"></div>
+            <div class="results" id="result3"></div>
+            <div class="results" id="result4"></div>
+            <div class="results" id="result5"></div>
+            <div class="results" id="result6"></div>  
+          </div>   
          <!--Quiz:Question 1-->
          <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3" id="quizBox">
             <div class="col">
@@ -203,18 +215,18 @@
             </form>
          </div>
       </div>
-         <!--Results Table-->
-         <div class="container-lg">
-               <h2 id="resultTitle">Results</h2>
-         </div>
-         <div class="container-lg" id="resultTable">
-            <div class="results" id="result1"></div>
-            <div class="results" id="result2"></div>
-            <div class="results" id="result3"></div>
-            <div class="results" id="result4"></div>
-            <div class="results" id="result5"></div>
-            <div class="results" id="result6"></div>  
-         </div>
+        <!--Thank You Pop Up-->
+      <div id="formCompletion" class="d-flex justify-content-center">
+       <div id="thankYouContainer" class="completedForm">
+         <button id="thankYouClose" class="thankYouCloseBtn">&times;</button> 
+          <div class="thankYouText">
+            <h5 id="thankYouHeader">Thank You for signing up!</h5>
+          </div>
+          <div class="thankYouText">
+            <p>All your inputs have been accepted.</p>
+           </div>
+        </div>   
+      </div>
    </section>
    <!--Modal for Quiz Images-->
    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
