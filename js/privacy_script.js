@@ -20,7 +20,7 @@ if(email.value.match(emailChars)){
 			
 }
 		
-	alert(userName+" , thank you for your Subject Access Request. We will send a copy of all relevant personal data to " +userEmail+ " within 30 days.");
+	alert(userName+", thank you for your Subject Access Request. We will send a copy of all relevant personal data to " +userEmail+ " within 30 days.");
 }
 
 
